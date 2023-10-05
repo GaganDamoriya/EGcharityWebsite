@@ -1,0 +1,62 @@
+.navbarHeader {
+  display: flex;
+  flex-direction: column;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  padding: 0 10px;
+  background-color: blueviolet;
+}
+.logo span {
+  font-size: x-large;
+  cursor: pointer;
+  color: aliceblue;
+  font-family: "Lobster", cursive;
+}
+.btn_div {
+  display: flex;
+  gap: 20px;
+}
+.donatebtn {
+  background-color: white;
+  border: none;
+  color: blueviolet;
+  padding: 4px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.slidingtxt {
+  background-color: rgb(68, 66, 66);
+  height: 20px;
+  color: white;
+  overflow: hidden;
+}
+.content {
+  position: relative;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  animation: content 10s infinite linear;
+
+  justify-content: center;
+  gap: 50%;
+}
+@keyframes content {
+  from {
+    transform: translateX(50%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

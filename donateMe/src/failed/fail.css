@@ -1,0 +1,23 @@
+.failed {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+  gap: 30px;
+}
+.contentfail {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: red;
+}
+.failIcon {
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  padding: 3px;
+  border: 1.2px solid red;
+  background-color: red;
+}

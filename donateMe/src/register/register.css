@@ -1,0 +1,21 @@
+.divRegisterMain {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.formRegister {
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  background-color: rgb(227, 209, 244);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 5px 5px blueviolet;
+}
+
+@media screen and (max-width: 650px) {
+  .formRegister {
+    width: 90%;
+  }
+}

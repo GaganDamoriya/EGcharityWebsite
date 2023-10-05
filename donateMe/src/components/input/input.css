@@ -1,0 +1,11 @@
+.field_items {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  cursor: pointer;
+  &:hover {
+    background-color: yellow;
+    color: blueviolet;
+    border-radius: 5px;
+  }
+}
