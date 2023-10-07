@@ -1,5 +1,6 @@
 const cors = require("cors");
 const express = require("express");
+const path = require("path");
 const { v4: uuidv4 } = require("uuid");
 require("dotenv").config();
 const stripe = require("stripe")(process.env.SEC);
@@ -12,6 +13,7 @@ app.use(cors());
 app.get("/", (req, res) => {
   res.send("it is working");
 });
+app.use(express.static(path.join(__dirname + "/public")));
 
 app.post("/payment", (req, res) => {
   const { formData, token } = req.body;
